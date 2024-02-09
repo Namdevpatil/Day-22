@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="product2" class="com.objectsAsseblingProcessInSpring.Product">
+	
+		<constructor-arg name="id">
+			<value>1012</value>
+		</constructor-arg> 
+		
+		<constructor-arg name="name">
+			<value>OPPO A9</value>
+		</constructor-arg> 
+		
+		<constructor-arg name="brand" ref="brand1"/>		
+		
+		<constructor-arg name="price">
+			<value>98493.34</value>
+		</constructor-arg>  
+		
+	</bean>
+	
+	<bean id="brand1" class="com.objectsAsseblingProcessInSpring.Brand">
+	
+		<constructor-arg name="brand">
+			<value>VIVO Mobiles</value>
+		</constructor-arg> 
+	
+	</bean>
+
+	
+
+</beans>
